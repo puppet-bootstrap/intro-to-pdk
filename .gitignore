@@ -1,0 +1,5 @@
+.*.sw?
+/stats/
+/vendor
+/.bundle
+/Gemfile.lock

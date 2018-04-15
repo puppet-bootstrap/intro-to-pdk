@@ -1,0 +1,14 @@
+{
+  "name": "Intro to PDK",
+  "description": "Introduction to the Puppet Development Kit (PDK)",
+  "favicon": "file/_images/favicon.ico",
+  "sections": [
+    "Title.md",
+    "About.md",
+    "Using.md",
+    "Testing.md",
+    "Customizing.md",
+    "Future.md",
+    "MoreInfo.md"
+  ]
+}

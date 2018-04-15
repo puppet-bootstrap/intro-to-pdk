@@ -1,0 +1,123 @@
+/** ONYX POINT TRAINING SHOWOFF STYLESHEET **/
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Titillium+Web:bold')
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f7f7; /* color under the slide */
+}
+#preso {
+  background-color: #f7f7f7; /* color outside the slide */
+}
+.slide {
+  position: relative !important;
+  background-color: #fff; /* color of the actual slide */
+  /*width: 85%; !important;*/
+  border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2%;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+h1 {
+  color: #000;
+  font-size: 150%;
+  border-bottom: 7px solid #4FA829 !important; /* FOR PROJECTORS make #333 */
+}
+h2 {
+  font-size: 110%;
+}
+
+/* CODE SNIPPETS */
+code {
+  font-family: 'Inconsolata', monospace;
+  border: 1px solid #666; /* FOR PROJECTORS make #000 */
+  font-size: 95%;
+}
+h1 code {
+  color: #333;
+  font-weight: bold;
+}
+code.language-puppet.hljs {
+  /* font-size: 95%; */
+}
+pre.highlight code.language-console {
+  box-shadow: none;
+  overflow-x: auto;
+  /* font-size: 95%; */
+}
+.hljs-literal {
+  color: #3C7F1F; /* dark green code */
+}
+
+/* SECTION TITLE SLIDES */
+.slide.center {
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #333;
+  text-align: center;
+}
+.slide.center>div {
+  width: 80%;
+  margin: 0 auto;
+}
+.slide.center div {
+  line-height: 120%;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 125%;
+}
+.slide.center div#title {
+  border-bottom: 8px solid #4FA829; /* lighter alternate: #77d44f */
+  /*text-transform: uppercase;*/
+  font-weight: bold;
+  font-size: 300%;
+  /*letter-spacing: .1em;*/
+}
+
+/* CALLOUTS */
+.callout::before, .callout i::before {
+  color: #4FA829;
+  font-size: 150%;
+}
+.callout {
+  border: 1px solid #aaa; /* FOR PROJECTORS make #333 */
+}
+
+/* FORM ELEMENTS */
+input, select, .ui-checkboxradio-label .ui-icon-background {
+  border: 2px solid #888; /* FOR PROJECTORS make #000 */
+}
+input[type=submit] {
+  min-height: 46px;
+  min-width: 100px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+.tools input[type=submit].dirty {
+  color: #fff;
+  background-color: #4FA829;
+}
+/* activity complete button on select */
+.ui-state-active, .ui-button.ui-state-active:hover {
+  background-color: #4FA829;
+  border: none;
+}
+
+/* OTHER ELEMENTS */
+hr {
+  opacity: .5;
+}
+
+/* SIDE MENU */
+#hamburger {
+  color: #000;
+  opacity: .6;
+}
+#hamburger:hover, #hamburger.highlight, .buttonWrapper:hover,
+.submenu a:hover, .submenu .highlighted a  {
+  background-color: #4FA829;
+  color: #000;
+}
